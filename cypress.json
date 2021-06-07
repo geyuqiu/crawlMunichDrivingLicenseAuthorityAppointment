@@ -1,0 +1,14 @@
+{
+  "defaultCommandTimeout": 2000,
+  "env": {
+    "stage": "local",
+    "local": {
+      "baseUrl": "https://www.muenchen.de/rathaus/terminvereinbarung_fs.html"
+    }
+  },
+  "numTestsKeptInMemory": 10,
+  "viewportHeight": 1024,
+  "viewportWidth": 1280,
+  "testFiles": "**/*.e2e.spec.ts",
+  "integrationFolder": "cypress/integration"
+}

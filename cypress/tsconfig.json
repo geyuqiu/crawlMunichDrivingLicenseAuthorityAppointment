@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "../node_modules",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "cypress-file-upload"
+    ]
+  },
+  "include": [
+    "../node_modules/cypress",
+    "support/index.d.ts",
+    "integration/crawl/*.spec.ts"
+  ]
+}
