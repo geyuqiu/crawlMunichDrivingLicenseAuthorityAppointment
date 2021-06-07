@@ -3,7 +3,7 @@
   "env": {
     "stage": "local",
     "local": {
-      "baseUrl": "https://www.muenchen.de/rathaus/terminvereinbarung_fs.html"
+      "baseUrl": "https://terminvereinbarung.muenchen.de/fs/termin"
     }
   },
   "numTestsKeptInMemory": 10,
