@@ -8,7 +8,10 @@ describe(`Go through a crash with animal flow: `, () => {
     startPage.navigateTo();
   });
 
-  it(`click Weiter`, () => {
+  it(`click Weiter after selecting Umschreibung eines ausländischen Führerscheins etc. `, () => {
+    startPage.getConvert().click();
+    startPage.selectDropDown1();
     startPage.getForward().click();
+    startPage.getWeekdayBookable();
   });
 });
