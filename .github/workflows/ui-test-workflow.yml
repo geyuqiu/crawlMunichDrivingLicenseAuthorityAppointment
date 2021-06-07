@@ -1,0 +1,22 @@
+name: run ui test
+on:
+  schedule:
+    # Runs every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    name: run ui test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.16.1
+      - name: Install node.js packages
+        run: npm install
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          record: true
