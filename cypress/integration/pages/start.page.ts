@@ -16,8 +16,8 @@ export class StartPage extends Navigator {
 
   getWeekdayBookable() {
     return cy.get('.nat_calendar .nat_calendar_weekday_bookable')
-      .its('length') // calls 'length' property returning that value
-      .should('be.eq', 0) // ensure the length is greater than 2;
+      .its('length')
+      .should('be.eq', 0)
   }
 
   selectDropDown1() {
