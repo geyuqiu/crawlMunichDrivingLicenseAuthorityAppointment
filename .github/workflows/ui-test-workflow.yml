@@ -1,5 +1,5 @@
 name: run ui test
-on:
+on: [push]
   schedule:
     # Runs every hour
     - cron: '0 * * * *'
@@ -18,5 +18,3 @@ jobs:
         run: npm install
       - name: Cypress run
         uses: cypress-io/github-action@v2
-        with:
-          record: true
