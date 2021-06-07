@@ -1,6 +1,6 @@
 name: run ui test
 on:
-  push
+  push:
     branches:
       - master
   schedule:
