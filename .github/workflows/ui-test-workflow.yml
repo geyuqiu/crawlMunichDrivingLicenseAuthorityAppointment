@@ -4,8 +4,13 @@ on:
     branches:
       - master
   schedule:
-    # Runs every hour
-    - cron: '1 * * * *'
+    # Runs every hour, stupid delays: https://upptime.js.org/blog/2021/01/22/github-actions-schedule-not-working/
+    - cron: '55 * * * *'
+    - cron: '56 * * * *'
+    - cron: '57 * * * *'
+    - cron: '58 * * * *'
+    - cron: '59 * * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
